@@ -3,14 +3,13 @@
 # System Tools:
 	* vim htop tmux git tilix curl iptraf-ng 
 	* deja-dup
-	* bmon for terminal network usage 
+	* bpytop for terminal monitoring
 	
 ## Browsers:
 	apt install chromium / snap 
 
 ## Security:
 	apt install ngrep ncat wireshark tshark tcpdump
-
 		
 ## Media:
 	ffmpeg vlc gimp 
@@ -29,10 +28,12 @@
 
 ## Edit .bashrc
 	force_color_promt=yes
-	some more grep color aliases 
+	# Security aliases 
 	alias rm='rm -i'
 	alias cp='cp -i'
 	alias mv='mv -i'		
+ 	Red prompt for root user
+  	(In /root/.bashrc ->  PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w \$\[\033[00m\] ')
 
 ## Sublime
 	wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
