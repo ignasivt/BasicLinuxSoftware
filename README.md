@@ -4,6 +4,7 @@
 	* vim htop tmux git tilix curl iptraf-ng 
 	* deja-dup
 	* bpytop for terminal monitoring
+	* echo "set -g mouse on" >> ~/.tmux.conf
 	
 ## Browsers:
 	apt install chromium / snap 
